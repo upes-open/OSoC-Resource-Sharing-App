@@ -19,17 +19,7 @@ The resource sharing web app is designed to facilitate university students in sh
 
 ### Tech Stack
 
-HTML: ![Static Badge](https://img.shields.io/badge/HTML-101010?logo=html5&logoColor=%23E34F26)
-
-Docker: ![Static Badge](https://img.shields.io/badge/Docker-101010?logo=docker&logoColor=%232496ED)
-
-Python: ![Static Badge](https://img.shields.io/badge/Python-101010?logo=python&logoColor=%233776AB)
-
-Django: ![Static Badge](https://img.shields.io/badge/Django-FFFFFF?logo=django&logoColor=%23092E20)
-
-Firebase: ![Static Badge](https://img.shields.io/badge/Firebase-101010?logo=firebase&logoColor=%23FFCA28)
-
-postgreSQL: ![Static Badge](https://img.shields.io/badge/PostgreSQL-F4F4F4?logo=postgresql&logoColor=%234169E1)
+![Static Badge](https://img.shields.io/badge/HTML-101010?logo=html5&logoColor=%23E34F26)    ![Static Badge](https://img.shields.io/badge/Docker-101010?logo=docker&logoColor=%232496ED)    ![Static Badge](https://img.shields.io/badge/Python-101010?logo=python&logoColor=%233776AB)    ![Static Badge](https://img.shields.io/badge/Django-FFFFFF?logo=django&logoColor=%23092E20)    ![Static Badge](https://img.shields.io/badge/Firebase-101010?logo=firebase&logoColor=%23FFCA28)    ![Static Badge](https://img.shields.io/badge/PostgreSQL-F4F4F4?logo=postgresql&logoColor=%234169E1)
 
 
 
