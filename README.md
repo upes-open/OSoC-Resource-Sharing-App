@@ -32,16 +32,6 @@ Firebase: ![Static Badge](https://img.shields.io/badge/Firebase-101010?logo=fire
 postgreSQL: ![Static Badge](https://img.shields.io/badge/PostgreSQL-F4F4F4?logo=postgresql&logoColor=%234169E1)
 
 
-### Contributing
-
-> Fork and Star the project.
-> Clone the repo.
-> Create a new branch <Your_Github_username> 
-> Go to the issues tab and comment on a suitable issue of your choice and wait for the issue to be assigned to you.
-> Make the changes in your local repo and push the changes.
-> Create a pull request to the main branch.
-> Wait for the PR to be reviewed and merged.
-
 
 ### How to contribute?
 #### Forking the repo
