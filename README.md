@@ -8,7 +8,10 @@
 
 
 
-![GitHub contributors](https://img.shields.io/github/contributors/upes-open/https%3A%2F%2Fgithub.com%2Fupes-open%2FOSoC-Resource-Sharing-App) ![GitHub forks](https://img.shields.io/github/forks/upes-open/https%3A%2F%2Fgithub.com%2Fupes-open%2FOSoC-Resource-Sharing-App) ![GitHub Repo stars](https://img.shields.io/github/stars/upes-open/https%3A%2F%2Fgithub.com%2Fupes-open%2FOSoC-Resource-Sharing-App) ![GitHub issues](https://img.shields.io/github/issues/upes-open/https%3A%2F%2Fgithub.com%2Fupes-open%2FOSoC-Resource-Sharing-App)
+![GitHub contributors](https://img.shields.io/github/contributors/upes-open/OSoC-Resource-Sharing-App.git)
+![GitHub forks](https://img.shields.io/github/forks/upes-open/OSoC-Resource-Sharing-App)
+![GitHub Repo stars](https://img.shields.io/github/stars/upes-open/OSoC-Resource-Sharing-App)
+![GitHub issues](https://img.shields.io/github/issues/upes-open/OSoC-Resource-Sharing-App)
 
 </div>
 
