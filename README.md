@@ -8,7 +8,7 @@
 
 
 
-![GitHub contributors](https://img.shields.io/github/contributors/upes-open/OSoC-Resource-Sharing-App.git)
+![GitHub contributors](https://img.shields.io/github/contributors/upes-open/OSoC-Resource-Sharing-App)
 ![GitHub forks](https://img.shields.io/github/forks/upes-open/OSoC-Resource-Sharing-App)
 ![GitHub Repo stars](https://img.shields.io/github/stars/upes-open/OSoC-Resource-Sharing-App)
 ![GitHub issues](https://img.shields.io/github/issues/upes-open/OSoC-Resource-Sharing-App)
