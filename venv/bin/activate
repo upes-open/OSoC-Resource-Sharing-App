@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/rohin/UPES/OPEN Community/OSOC'23/Resource Sharing App/OSoC-Resource-Sharing-App/venv"
+VIRTUAL_ENV="/home/vasanthan/Desktop/OSOC23/OSoC-Resource-Sharing-App/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

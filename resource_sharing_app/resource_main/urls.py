@@ -3,5 +3,5 @@ from . import views
 
 #urlconfig for the resource_main
 urlpatterns = [
-    path('', views.index, name="index"),
+    # path('', views.index, name="index"),
 ]
