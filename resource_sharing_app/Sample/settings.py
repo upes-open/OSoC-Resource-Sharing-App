@@ -44,7 +44,7 @@ ROOT_URLCONF = 'Sample.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['Sample/templates'],
+        'DIRS': ['Sample/templates', os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -110,7 +110,8 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'Sample/static_collected')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "Sample/static"
+    BASE_DIR / "Sample/static",
+    BASE_DIR / "static"
 ]
 from ms_identity_web.configuration import AADConfig
 from ms_identity_web import IdentityWebPython

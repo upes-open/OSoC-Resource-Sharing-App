@@ -14,23 +14,35 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">OSoC-Resource-Sharing-App</a>
-        <span class="navbar-text">{% block banner_text %}{% endblock %}</span>
-        <div class="btn-group ml-auto dropleft">
-            {% include "./auth/auth-bar-items.html" %}
-        </div>
-    </nav>
-    {% comment %} {% include "templates/navbar.html" %} {% endcomment %}
+    <div class="container">
+        {% include "navbar.html" %}
+    </div>
 
     <div class="container body-content">
         {% block body %}{% endblock %}
     </div>
 
     {% block flash_messages %}{% endblock %}
-    <footer id="footer">
+    {% comment %} <footer id="footer">
         {% block footer%}{% endblock %}
+    </footer> {% endcomment %}
+    <footer id="footer">
+        <div class= "navbar navbar-inverse navbar-static-bottom" role="navigation">
+            <div class="navbar-text pull-left">
+            </div>
+            <div class= "navbar-text pull-right">
+        <!-- Add in your social media / github links here -->
+                <a href="https://github.com/">
+                    <i class="fa fa-github-square fa-2x"></i>
+                </a>
+            </div>
+            <!--Below is the copyright information for the site. You can fill in your own here.-->
+            <div class="navbar-text pull-left">
+            &copy; OSoC-Resource-Sharing-App    
+            </div>
+        </div>	
     </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
