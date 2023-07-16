@@ -110,7 +110,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'Sample/static_collected')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "Sample/static",
+    # BASE_DIR / "Sample/static",
     BASE_DIR / "static"
 ]
 from ms_identity_web.configuration import AADConfig
