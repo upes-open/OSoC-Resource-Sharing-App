@@ -1,0 +1,79 @@
+<!-- create_discussion.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Discussion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Create a New Discussion</h1>
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+    <form method="post" action="{% url 'create_discussion' %}">
+        {% csrf_token %}
+        <label for="discussion_id">Discussion ID:</label><br>
+        <input type="text" name="discussion_id" required><br><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" required><br><br>
+
+        <button type="submit">Create Discussion</button>
+    </form>
+
+    <br>
+    <a href="{% url 'discussion_list' %}">Back to All Discussions</a>
+</body>
+</html>

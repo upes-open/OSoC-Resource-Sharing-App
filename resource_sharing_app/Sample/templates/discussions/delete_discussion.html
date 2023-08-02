@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Discussion</title>
+</head>
+<body>
+    <h1>Delete Discussion</h1>
+    <p>Are you sure you want to delete the discussion "{{ discussion.title }}"?</p>
+    <form id="delete-form" method="post" action="{% url 'delete_discussion' pk=discussion.pk %}">
+
+        {% csrf_token %}
+        <button type="submit">Yes, delete</button>
+        <a href="{% url 'discussion_list' %}">Cancel</a>
+        {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+    </form>
+
+
+</body>
+</html>

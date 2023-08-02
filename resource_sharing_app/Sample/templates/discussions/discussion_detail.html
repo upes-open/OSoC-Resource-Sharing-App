@@ -7,6 +7,7 @@
 <body>
     <a href="{% url 'discussion_detail' pk=discussion.pk %}"></a>
     <a href="{% url 'discussion_list' %}">Back to All Discussions</a>
+    <a href="{% url 'delete_discussion' pk=discussion.pk %}">Delete Discussion</a>
     <h1>{{ discussion.title }}</h1>
     <p>Created at: {{ discussion.created_at }}</p>
     <!-- Display other discussion details here -->
@@ -20,8 +21,10 @@
                 <!-- Display other comment details here -->
                 <p>Upvotes: <span id="upvotes_{{ comment.id }}">{{ comment.upvotes }}</span></p>
                 <p>Downvotes: <span id="downvotes_{{ comment.id }}">{{ comment.downvotes }}</span></p>
+                <a href="{% url 'delete_comment' pk=comment.pk %}">Delete Comment</a>
                 <button onclick="upvoteComment('{{ comment.id }}')">Upvote</button>
                 <button onclick="downvoteComment('{{ comment.id }}')">Downvote</button>
+
             </div>
             <hr>
         {% endfor %}
@@ -35,6 +38,8 @@
         <label for="content">New Comment:</label><br>
         <textarea name="content" rows="4" cols="50"></textarea><br>
         <button type="submit">Post Comment</button>
+
+
     </form>
 
 </body>

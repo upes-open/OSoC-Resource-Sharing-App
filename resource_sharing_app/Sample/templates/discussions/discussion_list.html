@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>All Discussions</h1>
+    <a href="{% url 'create_discussion' %}">Create a new discussion</a>
 
     {% if discussions %}
         <ul>
@@ -14,6 +15,9 @@
                 <li>
                     <a href="{% url 'discussion_detail' pk=discussion.pk %}">{{ discussion.title }}</a>
                     <p>Created at: {{ discussion.created_at }}</p>
+                    <form method="post" action="{% url 'delete_discussion' pk=discussion.pk %}" style="display: inline;">
+    
+                    </form>
                 </li>
             {% endfor %}
         </ul>
