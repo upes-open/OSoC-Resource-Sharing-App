@@ -1,0 +1,28 @@
+<!-- resource_detail.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resource Details</title>
+</head>
+<body>
+    <h1>{{ resource.title }}</h1>
+
+    <h2>Discussions:</h2>
+    {% if discussions %}
+        <ul>
+            {% for discussion in discussions %}
+                <li>
+                    <a href="{% url 'discussion_detail' pk=discussion.pk %}">{{ discussion.title }}</a>
+                    <p>Created at: {{ discussion.created_at }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No discussions for this resource yet.</p>
+    {% endif %}
+
+    <br>
+    <a href="{% url 'discussion_list' %}">Back to All Discussions</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- create_discussion.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Discussion</title>
+</head>
+<body>
+    <h1>Create a New Discussion</h1>
+    <form method="post" action="{% url 'create_discussion' %}">
+        {% csrf_token %}
+        <label for="discussion_id">Discussion ID:</label><br>
+        <input type="text" name="discussion_id" required><br><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" required><br><br>
+
+        <button type="submit">Create Discussion</button>
+    </form>
+
+    <br>
+    <a href="{% url 'discussion_list' %}">Back to All Discussions</a>
+</body>
+</html>

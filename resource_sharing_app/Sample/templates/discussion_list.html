@@ -1,0 +1,24 @@
+<!-- discussion_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Discussions</title>
+</head>
+<body>
+    <h1>All Discussions</h1>
+
+    {% if discussions %}
+        <ul>
+            {% for discussion in discussions %}
+                <li>
+                    <a href="{% url 'discussion_detail' pk=discussion.pk %}">{{ discussion.title }}</a>
+                    <p>Created at: {{ discussion.created_at }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No discussions available.</p>
+    {% endif %}
+</body>
+</html>
